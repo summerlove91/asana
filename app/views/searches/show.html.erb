@@ -1,0 +1,10 @@
+<h1>Search#show</h1>
+<p>Find me in app/views/search/show.html.erb</p>
+
+<%= form_for @search, as: :client, url:  search_path, method: :get do |f| %>
+  <%= f.text_field :query %>
+  <%= f.submit "Search Project"%>
+<% end %>
+
+<%= @search.results %>
+
